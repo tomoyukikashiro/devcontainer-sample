@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 {
   "name": "sample",
-  "dockerComposeFile": "compose.yaml",
+  "dockerComposeFile": "./compose.yaml",
   "service": "server",
   "workspaceFolder": "/workspaces"
 
