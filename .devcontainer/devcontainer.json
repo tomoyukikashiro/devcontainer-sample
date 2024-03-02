@@ -4,7 +4,7 @@
   "name": "sample",
   "dockerComposeFile": "compose.yaml",
   "service": "server",
-  "workspaceFolder": "/workspaces"
+  "workspaceFolder": "/workspaces",
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   // "features": {},
@@ -14,7 +14,8 @@
   // "forwardPorts": [3000, 5432],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "yarn install",
+  // docker-compose の command 指定は実行されずこちらが必要。
+  "postCreateCommand": "npm install && npm run dev",
 
   // Configure tool-specific properties.
   // "customizations": {},
